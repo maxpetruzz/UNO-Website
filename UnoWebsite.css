@@ -1,5 +1,28 @@
-h1 {
+body {
+    margin-top: 200px;
+    background: #121212;
+  }
+  h1 {
     font-family: Montserrat;
-    text-align: center;
-    color:blue;
-}
+    text-align: left;
+    font-weight: 350;
+    padding-left: 100px;
+    background-clip: text;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .gradientText {
+    margin-top:-40px;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(45deg, #ff0000, #0000ff);
+    -webkit-text-fill-color: transparent;
+    font-family: Montserrat;
+    font-weight: 750;
+    text-align: left;
+    padding-left: 100px;
+    background-image: linear-gradient(45deg, #ff0000, #0000ff);
+    background-clip: text;
+    font-size: 100px;
+  }
+  
