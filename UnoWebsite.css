@@ -1,28 +1,116 @@
+header {
+  position:relative;
+  margin-top: 2vw;
+  width: auto;
+  display: flex;
+  align-items: right;
+  align-content: right;
+}
+
+.homeButton,.gameButton{
+  display:inline;
+  float:right;
+}
+
+.homeButton,.gameButton:hover {
+  font-weight: 300;
+  color: crimson;
+}
+
+.homeButton {
+  margin-left: 60vw;
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: #fff;
+  text-decoration: none;
+}
+
+.gameButton {
+  margin-left: 4vw;
+  font-size: 1.5vw;
+  font-weight: 100;
+  color: #fff;
+  text-decoration: none;
+}
+
 body {
-    margin-top: 200px;
-    background: #121212;
+  text-align: center;
+  margin:0;
+  font-family: Montserrat;
+  color: aliceblue;
+  background: black;
+}
+
+.topOfPage{
+  margin-top: 10vw;
+}
+
+.welcome {
+  font-family: Montserrat;
+  text-align: center;
+  margin-left: -36%;
+  font-weight: 350;
+  background-clip: text;
+  font-size: 2.3vw;
+  color: white;
+}
+
+/* .gradientText {
+  margin-top:-3%;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(45deg, #ff0000, #0000ff);
+  -webkit-text-fill-color: transparent;
+  font-family: Montserrat;
+  font-weight: 750;
+  text-align: center;
+  padding-left: 0px;
+  background-clip: text;
+  font-size: 6.5vw;
+  z-index: 0;
+} */
+
+.gradientText {
+  margin-top:-3%;
+  font-family: Montserrat;
+  font-weight: 750;
+  text-align: center;
+  padding-left: 0px;
+  font-size: 6.5vw;
+  z-index: 0;
+  background: linear-gradient(to right, rgb(255, 0, 0) 12%, #FF0 24%, rgb(0, 119, 255) 36%, rgb(0, 167, 14) 48%, rgb(255, 0, 0) 60%, #FF0 72%, rgb(0, 119, 255) 84%, rgb(0, 167, 14) 92%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 10s;
+  animation-direction: backwards;
+  animation-name: shine;
+  animation-iteration-count: infinite;
+}
+  @keyframes shine {
+    0% {
+      background-position: 0% center;
+  } 50% {
+      background-position: 100% center;
+  } 100% {
+    background-position: 0% center;
   }
-  h1 {
-    font-family: Montserrat;
-    text-align: left;
-    font-weight: 350;
-    padding-left: 100px;
-    background-clip: text;
-    font-size: 40px;
-    color: white;
   }
-  
-  .gradientText {
-    margin-top:-40px;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(45deg, #ff0000, #0000ff);
-    -webkit-text-fill-color: transparent;
-    font-family: Montserrat;
-    font-weight: 750;
-    text-align: left;
-    padding-left: 100px;
-    background-image: linear-gradient(45deg, #ff0000, #0000ff);
-    background-clip: text;
-    font-size: 100px;
-  }
+
+
+
+.unoLogoCard {
+  opacity: 75%;
+  margin-top:-17vw;
+  position:relative;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: -10;
+}
+
+
+
   
