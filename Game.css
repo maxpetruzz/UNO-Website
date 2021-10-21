@@ -1,35 +1,93 @@
 header {
-    position:relative;
-    margin-top: 2vw;
-    width: auto;
-    display: flex;
-    align-items: right;
-    align-content: right;
-  }
-  
-  .homeButton,.gameButton{
-    display:inline;
-    float:right;
-  }
-  
-  .homeButton {
-    margin-left: 60vw;
-    font-size: 1.5vw;
-    font-weight: 100;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .gameButton {
-    margin-left: 4vw;
-    font-size: 1.5vw;
-    font-weight: 100;
-    color: #fff;
-    text-decoration: none;
-  }
+  position:relative;
+  margin-top: 2vw;
+  width: auto;
+  display: flex;
+  align-items: right;
+  align-content: right;
+}
+
+.icon {
+  width:3vw;
+  height: auto;
+  margin-left: 8vw;
+}
+
+.homeButton,.gameButton{
+  display:inline;
+  float:right;
+}
+
+.homeButton:hover {
+  color: rgb(151, 151, 151);
+}
+
+.homeButton {
+  margin-left: 60vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+
+.gameButton {
+  margin-left: 4vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: crimson;
+  text-decoration: none;
+}
+
 body {
-    margin:0;
+    margin:auto;
     font-family: Montserrat;
     color: aliceblue;
-    background: #1C0000;
+    background: #121212;
   }
+
+.gameBoard{
+  margin-top: 2vw;
+  justify-content: center;
+}
+
+.computer1Hand{
+  display: flex;
+  justify-content: center;
+}
+
+.computerCard{
+  margin-left: -.05vw;
+  width: 8%;
+  height: auto;
+}
+
+.middleDeck{
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.drawPile{
+  width: 8%;
+  height: auto;
+  margin-left: 2vw;
+}
+
+.playPile{
+  width: 8%;
+  height: auto;
+  margin-right: 2vw;
+}
+
+.playerHand{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vw;
+}
+
+.playerCard{
+  margin-left: -.05vw;
+  width: 8%;
+  height: auto;
+}
