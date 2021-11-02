@@ -1,7 +1,10 @@
-<html lang="en" dir="ltr"><head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="utf-8">
     <title>Uno Reimagined</title>
+    
   </head>
+  <body>
   <link href='./Game.css' rel='stylesheet'>
   <header id="header">
     <a href="./UnoWebsite.html">
@@ -14,6 +17,7 @@
         <a class="GameButton" href="./Game.html">Play</a>
       </h1>
   </header>
+    
   <div class="gameBoard">
     <div class="computer1Hand">
       <img class="computerCard" src="./images/BackCard.png">
@@ -24,18 +28,26 @@
       <img class="computerCard" src="./images/BackCard.png">
       <img class="computerCard" src="./images/BackCard.png">
     </div>
-    <div class="middleDeck">
-      <img class="playPile" src="./images/Y2.png">
-      <img class="drawPile" src="./images/BackCard.png">
+    <div id="middleDeck" class="middleDeck">
+      <div class="playPile">
+        <!-- <img class="playPile" src="./images/Y2.png" id="playCard"> -->
+      </div>
+      <div class="drawPile">
+        <img class="drawPile" src="./images/BackCard.png" id="drawCard" onclick="cardDrew()">
+      </div>
+     </div>
+      <div class="playerHand">
+          <!-- <img class="playerCard" src="./images/B4.png" id="playerCard" onclick="cardClicked()"/>
+          <img class="playerCard" src="./images/Y9.png" id="playerCard" onclick="cardClicked()"/>
+          <img class="playerCard" src="./images/Wild.png" id="playerCard" onclick="cardClicked()"/>
+          <img class="playerCard" src="./images/R5.png" id="playerCard" onclick="cardClicked()"/>
+          <img class="playerCard" src="./images/R7.png" id="playerCard" onclick="cardClicked()"/>
+          <img class="playerCard" src="./images/BP2.png" id="playerCard" onclick="cardClicked()"/>
+          <img class="playerCard" src="./images/Plus4.png" id="playerCard" onclick="cardClicked()"/> -->
+        </div>
+      </div>
     </div>
-    <div class="playerHand">
-      <img class="playerCard" src="./images/B4.png">
-      <img class="playerCard" src="./images/Y9.png">
-      <img class="playerCard" src="./images/Wild.png">
-      <img class="playerCard" src="./images/R5.png">
-      <img class="playerCard" src="./images/R7.png">
-      <img class="playerCard" src="./images/BP2.png">
-      <img class="playerCard" src="./images/Plus4.png">
-    </div>
-  </div>
-  <script> src="./Game.js"</script>
+    <script src="./Game.js">
+    </script>
+  </body>
+  </html>

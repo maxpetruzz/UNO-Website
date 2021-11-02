@@ -152,10 +152,12 @@ body {
 }
 
 .playButton {
+  font-size: 1vw;
   margin-right: 2vw;
 }
 
 .infoButton {
+  font-size: 1vw;
   margin-left: 2vw;
 }
 
