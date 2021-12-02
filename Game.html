@@ -18,16 +18,47 @@
       </h1>
   </header>
     
-  <div class="gameBoard">
-    <div class="computer1Hand">
-      <img class="computerCard" src="./images/BackCard.png">
-      <img class="computerCard" src="./images/BackCard.png">
-      <img class="computerCard" src="./images/BackCard.png">
-      <img class="computerCard" src="./images/BackCard.png">
-      <img class="computerCard" src="./images/BackCard.png">
-      <img class="computerCard" src="./images/BackCard.png">
-      <img class="computerCard" src="./images/BackCard.png">
+
+  <div id="WildPopUp" class="popUp">
+    <h1 class="chooseCardHeader">Choose a Card</h1>
+    <div class="row">
+      <div class="col-3">
+        <img class="chooseCard" src="./images/BW.png" name="BW" id="playerCard" onclick="playPopUpCard(this)"/>
+      </div>
+      <div class="col-3">
+        <img class="chooseCard" src="./images/GW.png" name="GW" id="playerCard" onclick="playPopUpCard(this)"/>
+      </div>
+      <div class="col-3">
+        <img class="chooseCard" src="./images/RW.png" name="RW" id="playerCard" onclick="playPopUpCard(this)"/>
+      </div>
+      <div class="col-3">
+        <img class="chooseCard" src="./images/YW.png" name="YW" id="playerCard" onclick="playPopUpCard(this)"/>
+      </div>
     </div>
+  </div>
+
+  <div id="Plus4PopUp" class="popUp">
+    <h1 class="chooseCardHeader">Choose a Card</h1>
+    <div class="row">
+      <div class="col-3">
+        <img class="chooseCard" src="./images/BP4.png" name="BP4" id="playerCard" onclick="playPopUpCard(this)"/>
+      </div>
+      <div class="col-3">
+        <img class="chooseCard" src="./images/GP4.png" name="GP4" id="playerCard" onclick="playPopUpCard(this)"/>
+      </div>
+      <div class="col-3">
+        <img class="chooseCard" src="./images/RP4.png" name="RP4" id="playerCard" onclick="playPopUpCard(this)"/>
+      </div>
+      <div class="col-3">
+        <img class="chooseCard" src="./images/YP4.png" name="YP4" id="playerCard" onclick="playPopUpCard(this)"/>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="gameBoard"><div class="computerHand"></div>
+  <h1 class="TurnTitles" id="computerTurnText">COMPUTER'S TURN</h1>
     <div id="middleDeck" class="middleDeck">
       <div class="playPile">
         <!-- <img class="playPile" src="./images/Y2.png" id="playCard"> -->
@@ -36,6 +67,7 @@
         <img class="drawPile" src="./images/BackCard.png" id="drawCard" onclick="cardDrew()">
       </div>
      </div>
+     <h1 class="TurnTitles" id="playerTurnText">YOUR TURN</h1>
       <div class="playerHand">
           <!-- <img class="playerCard" src="./images/B4.png" id="playerCard" onclick="cardClicked()"/>
           <img class="playerCard" src="./images/Y9.png" id="playerCard" onclick="cardClicked()"/>
