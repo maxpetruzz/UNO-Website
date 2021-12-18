@@ -60,6 +60,26 @@ body {
     font-size: 1.5vw;
   }
 
+  #LossPopUp, #WinPopUp {
+    background: rgba(0, 0, 0, 0.89);
+    visibility: hidden;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 5% 5% 5% 5%;
+    border-radius: 1em;
+    background-color: rgba(59, 59, 59, 0.986);
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+
+  .resultHeader{
+    margin-top: 3%;
+    font-weight: 900;
+  }
+
   .chooseCardHeader {
     margin-top: 0%;
   }
@@ -71,6 +91,11 @@ body {
   
   }
 
+  .resultRow{
+    display: block;
+    width: 100%;
+  }
+
   .row{
     display: flex;
     width: 100%;
@@ -79,6 +104,35 @@ body {
   .col-3{
     width: 25%;
   }
+
+  .resultImg{
+    width: 15rem;
+  }
+
+  .playButton:hover, .infoButton:hover {
+    background-color: rgb(255, 0, 0);
+    }
+    
+    .playButton, .infoButton{
+      padding: 1vw 5vw 1vw 5vw;
+      background-color:rgba(0, 0, 0, 0.712);
+      font-weight:600;
+      color: rgb(255, 255, 255);
+      border: white solid 2px;
+      text-decoration: none;
+    }
+    
+    .playButton {
+      border-radius: 1em;
+      font-size: 1vw;
+      margin-right: 1vw;
+    }
+    
+    .infoButton {
+      border-radius: 1em;
+      font-size: 1vw;
+      margin-left: 1vw;
+    }
 
 .gameBoard{
   margin-top: 2vw;
@@ -117,7 +171,7 @@ body {
 .playPile{
   width: 29%;
   height: auto;
-  margin-right: 1vw;
+  margin-right: .5vw;
 }
 
 .playerHand{
